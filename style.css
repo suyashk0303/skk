@@ -1183,4 +1183,19 @@ section.show {
     font-size: 22px;
   }
 }
+.section {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: sectionShow 1s ease forwards;
+}
 
+@keyframes sectionShow {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
